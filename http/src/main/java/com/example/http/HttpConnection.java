@@ -60,7 +60,7 @@ public class HttpConnection {
      *
      * @return the retries to default
      */
-    /*
+/*
     MethodId : setRetriesToDefault
     Input: Nothing
     Output: int
@@ -78,7 +78,7 @@ public class HttpConnection {
      *
      * @return the to max retries
      */
-    /*
+/*
     MethodId : setToMaxRetries
     Input: Nothing
     Output: int
@@ -96,7 +96,7 @@ public class HttpConnection {
      *
      * @return the http status
      */
-    /*
+/*
     MethodId : getiHTTPStatus
     Input: Nothing
     Output: int
@@ -114,7 +114,7 @@ public class HttpConnection {
      *
      * @param iHTTPStatus the http status
      */
-    /*
+/*
     MethodId : setiHTTPStatus
     Input: int
     Output: Nothing
@@ -131,7 +131,7 @@ public class HttpConnection {
      *
      * @return the status msg
      */
-    /*
+/*
     MethodId : getsStatusMsg
     Input: Nothing
     Output: String
@@ -149,7 +149,7 @@ public class HttpConnection {
      *
      * @param sStatusMsg the s status msg
      */
-    /*
+/*
     MethodId : setsStatusMsg
     Input: string
     Output: Nothing
@@ -168,7 +168,7 @@ public class HttpConnection {
      * @param httpTaskCompleteListener the http task complete listener
      * @return the instance
      */
-    /*
+/*
     MethodId : getInstance
     Input: context,HttpTaskCompleteListener
     Output: HttpConnection instance
@@ -197,7 +197,7 @@ public class HttpConnection {
      * @param timeOutInMilliSecond the time out in milli second
      * @param retries              the retries
      */
-    /*
+/*
     MethodId : httpGet
     Input: string,int,int
     Output: Nothing
@@ -267,7 +267,7 @@ public class HttpConnection {
      * @param url      the url
      * @param keyValue the key value
      */
-    /*
+/*
     MethodId : httpPost
     Input: string,hashmap
     Output: Nothing
