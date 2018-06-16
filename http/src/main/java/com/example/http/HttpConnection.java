@@ -206,10 +206,10 @@ public class HttpConnection {
     Version: 1.0
     */
     public synchronized void httpGet(final String sUrl, final int timeOutInMilliSecond, final int retries) {
-        final ProgressDialog pDialog = new ProgressDialog(mContext);
+       // final ProgressDialog pDialog = new ProgressDialog(mContext);
         try {
-            pDialog.setMessage("Initializing...");
-            pDialog.show();
+        //    pDialog.setMessage("Initializing...");
+         //   pDialog.show();
         } catch (Exception e) {
             Log.e(TAG, e.toString() + "," + e.getMessage());
             setiHTTPStatus(ERROR_DUE_TO_EXCEPTION);
@@ -222,7 +222,7 @@ public class HttpConnection {
             @Override
             public void onResponse(String response) {
                 Log.d(TAG, response);
-                pDialog.dismiss();
+             //   pDialog.dismiss();
                 sUrlResult = response;
                 setiHTTPStatus(SUCCESS);
                 setsStatusMsg(VOLLEY_SUCCESS_MSG);
@@ -233,7 +233,7 @@ public class HttpConnection {
             @Override
             public void onErrorResponse(VolleyError error) {
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
-                pDialog.dismiss();
+             //   pDialog.dismiss();
 
                 if (error instanceof TimeoutError) {
                     sUrlResult = TIME_OUT_ERROR;
@@ -276,10 +276,10 @@ public class HttpConnection {
     Version: 1.0
     */
     public synchronized void httpPost(final String url, final HashMap<String, String> keyValue) {
-        final ProgressDialog pDialog = new ProgressDialog(mContext);
+      //  final ProgressDialog pDialog = new ProgressDialog(mContext);
         try {
-            pDialog.setMessage("Initializing...");
-            pDialog.show();
+        //    pDialog.setMessage("Initializing...");
+       //     pDialog.show();
         } catch (Exception e) {
             Log.e(TAG, e.toString() + "," + e.getMessage());
             setiHTTPStatus(ERROR_DUE_TO_EXCEPTION);
@@ -292,7 +292,7 @@ public class HttpConnection {
             @Override
             public void onResponse(String response) {
                 Log.d(TAG, response);
-                pDialog.hide();
+          //      pDialog.hide();
                 sUrlResult = response;
                 setiHTTPStatus(SUCCESS);
                 setsStatusMsg(VOLLEY_SUCCESS_MSG);
@@ -303,7 +303,7 @@ public class HttpConnection {
             @Override
             public void onErrorResponse(VolleyError error) {
                 VolleyLog.d(TAG, "Error: " + error.getMessage());
-                pDialog.hide();
+            //    pDialog.hide();
                 if (error instanceof TimeoutError) {
                     sUrlResult = TIME_OUT_ERROR;
                 } else if (error instanceof NoConnectionError) {
